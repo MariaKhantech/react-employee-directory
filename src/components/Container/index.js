@@ -10,14 +10,25 @@ class Container extends Component {
     
 
       //when the component first loads search for employees using the API
-      componentDidMount() {
+    componentDidMount() {
         API.getEmployees()
         .then(response => {
             this.setState({results:response.data.results})
            
         })
         .catch(err => console.log(err));
+
+        console.log(this.state.results);
     }
+
+    //class function to render the container and the components(search input, bootstrap table) within the containter
+    render() {
+        return (
+          <div className= "container">
+             
+          </div>
+        );
+      }
 }
 
 export default Container;
