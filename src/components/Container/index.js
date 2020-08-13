@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import API from '../../util/API'
+import API from '../../util/API';
+import SearchBar from '../SearchBar'
 
 class Container extends Component {
 	//declare 2 states searchTerm(text types in input box) and results (array of employees)
@@ -24,8 +25,9 @@ class Container extends Component {
     //class function to render the container and the components(search input, bootstrap table) within the containter
     render() {
         return (
-          <div className= "container">
-             
+          <div className= "container mt-5">
+             <SearchBar search={this.state.searchTerm}> 
+            </SearchBar>
           </div>
         );
       }
