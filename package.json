@@ -1,5 +1,4 @@
 {
-	"homepage": "https://MariaKhantech.github.io/react-employee-directory",
 	"name": "react-employee-directory",
 	"version": "0.1.0",
 	"private": true,
@@ -13,7 +12,8 @@
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"react-scripts": "3.4.1"
-	},
+  },
+  "homepage": "https://MariaKhantech.github.io/react-employee-directory",
 	"scripts": {
 		"start": "react-scripts start",
 		"predeploy": "npm run build",

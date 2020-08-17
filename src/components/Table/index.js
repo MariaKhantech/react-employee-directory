@@ -26,7 +26,7 @@ function Table(props) {
 			<table className="table table-striped">
 				<thead className="thead-dark">
 					<tr>
-						<th scope="col">Picutre</th>
+						<th scope="col">Picture</th>
 						<th scope="col" style={{ cursor: 'pointer' }} onClick={props.sortByName}>
 							Name
 						</th>
