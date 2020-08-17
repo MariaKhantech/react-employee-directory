@@ -10,6 +10,7 @@
   </a>
   
 ## Demo 
+![employee-directory](https://user-images.githubusercontent.com/61640527/90357172-0a069400-e020-11ea-8495-bd418db07ce2.gif)
 
 
 
