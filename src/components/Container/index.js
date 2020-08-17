@@ -23,8 +23,7 @@ class Container extends Component {
 	//handle the input change of the search box, and update this.state.searchTerm
 	handleInputChange = (event) => {
 		event.preventDefault();
-		this.setState({ searchTerm: event.target.value });
-		console.log(this.state.searchTerm);
+		this.setState({ searchTerm: event.target.value.toLowerCase() });
 	};
 
 	//sort the array of employee objects by name by asc or desc

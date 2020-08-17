@@ -5,7 +5,8 @@ function Table(props) {
 	//filter employees by name types in the search box
 	//Assumes employees name begin with an upper case
 	var employees = props.results.filter((item) => {
-		return item.name.first.startsWith(props.searchTerm.toUpperCase());
+		let employeeName = item.name.first.toLowerCase();
+		return employeeName.startsWith(props.searchTerm);
 	});
 
 	//create the rows of employees
