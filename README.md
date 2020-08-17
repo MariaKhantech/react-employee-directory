@@ -6,7 +6,7 @@
 <!-- image for team tracker-->
   <p align="center">
   <a href="#">
-    <img src="https://cdn2.vectorstock.com/i/1000x1000/22/36/employee-woman-vector-23342236.jpg" width="125" height="100"/>
+    <img src="https://library.kissclipart.com/20180830/spw/kissclipart-women-icon-clipart-computer-icons-woman-clip-art-5daaf8ff186921d7.png" width="125" height="100"/>
   </a>
   
 ## Demo 
