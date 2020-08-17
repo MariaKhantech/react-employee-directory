@@ -3,15 +3,16 @@ import Moment from 'moment';
 
 function Table(props) {
 	//filter employees by name types in the search box
+	//Assumes employees name begin with an upper case
 	var employees = props.results.filter((item) => {
-		return item.name.first.startsWith(props.searchTerm);
+		return item.name.first.startsWith(props.searchTerm.toUpperCase());
 	});
 
 	//create the rows of employees
 	const rows = employees.map((element) => (
 		<tr key={element.id.value}>
 			<td className="align-middle">
-				<img src={element.picture.medium} className="img-responsive" />
+				<img src={element.picture.medium} className="img-responsive" alt="Employee avatar" />
 			</td>
 			<td>{element.name.first}</td>
 			<td>{element.email}</td>
@@ -26,7 +27,9 @@ function Table(props) {
 				<thead className="thead-dark">
 					<tr>
 						<th scope="col">Picutre</th>
-						<th scope="col">Name</th>
+						<th scope="col" style={{ cursor: 'pointer' }} onClick={props.sortByName}>
+							Name
+						</th>
 						<th scope="col">Email</th>
 						<th scope="col">Phone</th>
 						<th scope="col">D.O.B</th>
