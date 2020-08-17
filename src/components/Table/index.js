@@ -2,8 +2,7 @@ import React from 'react';
 import Moment from 'moment';
 
 function Table(props) {
-	//filter employees by name types in the search box
-	//Assumes employees name begin with an upper case
+	//filter employees by name types in the search box. Everything is convereted to lowercase
 	var employees = props.results.filter((item) => {
 		let employeeName = item.name.first.toLowerCase();
 		return employeeName.startsWith(props.searchTerm);
