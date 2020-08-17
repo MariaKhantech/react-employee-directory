@@ -3,7 +3,6 @@ import './style.scss';
 
 //wraps arpund the entire body
 function Jumbotron(props) {
-	console.log(props.children);
 	return (
 		<header className="jumbotron">
 			<span className="badge ">

@@ -7,8 +7,6 @@ function Table(props) {
 		return item.name.first.startsWith(props.searchTerm);
 	});
 
-	console.log('in table code');
-
 	//create the rows of employees
 	const rows = employees.map((element) => (
 		<tr key={element.id.value}>

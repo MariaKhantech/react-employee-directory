@@ -21,14 +21,18 @@ class Container extends Component {
 
 	//handle the input change of the search box, and update this.state.searchTerm
 	handleInputChange = (event) => {
+		event.preventDefault();
 		this.setState({ searchTerm: event.target.value });
+		console.log(this.state.searchTerm);
 	};
 
 	//class function to render the container and the components(search input, bootstrap table) within the containter
 	render() {
 		return (
 			<div className="container mt-5">
-				<SearchBar search={this.state.searchTerm}> handleInputChange={this.handleInputChange} </SearchBar>
+				<SearchBar search={this.state.searchTerm} handleInputChange={this.handleInputChange}>
+					{' '}
+				</SearchBar>
 				<Table results={this.state.results} searchTerm={this.state.searchTerm} />
 			</div>
 		);
